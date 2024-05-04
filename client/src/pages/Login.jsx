@@ -41,7 +41,7 @@ export default function Login() {
       Password
     };
   
-    axios.post("http://localhost:8070/auth/", user)
+    axios.post("https://astroworld-production.up.railway.app/auth/", user)
       .then((response) => {
         console.log(response);
         localStorage.setItem("authToken", response.data.token);

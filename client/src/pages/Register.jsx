@@ -17,7 +17,7 @@ export default function Signup() {
   
 const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8070/auth/register', { Fullname, Email, JobStatus, Password })
+    axios.post('https://astroworld-production.up.railway.app/auth/register', { Fullname, Email, JobStatus, Password })
       .then(result => {
         console.log(result);
         navigate('/');
