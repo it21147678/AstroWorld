@@ -1,0 +1,11 @@
+.spinner {
+  width: 15rem; 
+  height: 10rem; 
+}
+
+
+@keyframes spinner-aib1d7 {
+  to {
+     transform: rotate(360deg);
+  }
+}
