@@ -17,6 +17,8 @@ export default function Login() {
     startTypingAnimation();
   }, []);
 
+ 
+
   // Function to simulate typing animation
   const startTypingAnimation = () => {
     const text = "Embark on an awe-inspiring adventure through the cosmos...";

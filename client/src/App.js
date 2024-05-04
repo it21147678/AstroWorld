@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import useAuth from './utils/useAuth';
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -12,11 +13,14 @@ import Register from "./pages/Register";
 import "../src/App.css";
 
 function App() {
-  const location = useLocation();
 
+  useAuth();
+
+  const location = useLocation();
   // Check if the current location is not "/login" or "/register"
   const showNavbar = location.pathname !== "/" && location.pathname !== "/register";
 
+  
   return (
     <div className="bg-space overflow-x-hidden relative w-[100vw] bg-cover h-[100vh]">
       {showNavbar && (

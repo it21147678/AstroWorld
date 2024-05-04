@@ -1,5 +1,8 @@
+import React, { useEffect } from "react";
 import "../App.css"
 export default function Home(){
+
+ 
   return (
     <div className="relative">   
        <div className="font-poppins w-full text-white sm:text-6xl  text-5xl font-bold  grid 
