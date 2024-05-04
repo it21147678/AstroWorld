@@ -46,9 +46,10 @@ export default function Potd() {
   return (
     <div className="flex flex-col bg-cover min-h-screen font-poppins text-white">
       {/* Date picker section */}
-      <div className="mx-auto mt-8 flex flex-col items-center">
-        <div>
-          <input type="date" value={date} onChange={handleChange} className="text-black rounded-md p-2 mr-2" />
+      <div className="mx-auto mt-8 flex items-center">      
+        <div className="sm:flex-row sm:flex">
+          <p className="ml-8 mb-1 sm:mb-0 sm:mr-5 mt-2">Enter a Date</p>
+          <input type="date" value={date} onChange={handleChange} className="text-black rounded-md p-2 mr-2" placeholder="Enter a Date"/>
         </div>
       </div>
 
