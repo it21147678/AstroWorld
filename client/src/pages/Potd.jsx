@@ -60,7 +60,7 @@ export default function Potd() {
         </div>
         <div className="w-10/12 relative flex flex-col gap-10 justify-center items-center mx-auto">
           {/* Display picture of the day title */}
-          <p className="text-2xl sm:text-6xl text-center font-bold">{potd.title}</p>
+          <p className="text-2xl sm:text-6xl text-center font-bold potd-header">{potd.title}</p>
 
           {/* Display loading spinner or image/video */}
           {loading ? (
