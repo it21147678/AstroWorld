@@ -36,32 +36,33 @@ export default function Login() {
 
 
   const handleLogin = (e) => {
-    e.preventDefault();
+    navigate('/home');
+    // e.preventDefault();
   
-    const user = {
-      Email,
-      Password
-    };
+    // const user = {
+    //   Email,
+    //   Password
+    // };
   
-    axios.post("https://astroworld-production.up.railway.app/auth/", user)
-      .then((response) => {
-        console.log(response);
-        localStorage.setItem("authToken", response.data.token);
-       localStorage.setItem("userData", JSON.stringify(response.data.user));
-        navigate('/home');
-      })
-      .catch((error) => {
-        toast.error('Inputs are Incorrect', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-      });
+    // axios.post("https://astroworld-production.up.railway.app/auth/", user)
+    //   .then((response) => {
+    //     console.log(response);
+    //     localStorage.setItem("authToken", response.data.token);
+    //    localStorage.setItem("userData", JSON.stringify(response.data.user));
+    //     navigate('/home');
+    //   })
+    //   .catch((error) => {
+    //     toast.error('Inputs are Incorrect', {
+    //       position: "top-right",
+    //       autoClose: 5000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //       draggable: true,
+    //       progress: undefined,
+    //       theme: "light",
+    //     });
+    //   });
   }
 
   const scrollToLoginForm = () => {
