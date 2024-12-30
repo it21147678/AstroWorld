@@ -14,7 +14,7 @@ import "../src/App.css";
 
 function App() {
 
-  useAuth();
+  // useAuth();
 
   const location = useLocation();
   // Check if the current location is not "/login" or "/register"
