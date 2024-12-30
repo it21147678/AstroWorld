@@ -44,6 +44,9 @@ Astroverse is a project that utilizes NASA APIs to provide various features rela
 
 - **Client**: React, React Router DOM, Axios, Tailwind CSS, JWT Decode, Leaflet, React Icons, React Copy to Clipboard, React Leaflet, React Hot Toast, React Toastify, Web Vitals
 - **Server**: Node.js, Express, MongoDB, Mongoose, Bcrypt, JWT, Dotenv, Cors
+  
+> **Authentication Notice**  
+> Please note that the authentication functionalities are currently commented out in this project. This is due to the backend being hosted on a free-tier plan, and the associated resource limits have been exhausted. As a result, authentication services are temporarily unavailable until the backend resources are replenished or upgraded.
 
 ## Contributing
 
